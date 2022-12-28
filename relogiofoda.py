@@ -29,7 +29,7 @@ janela.resizable(width=FALSE, height=FALSE)
 
 # horario
 
-def relogio():
+def relogio(): # definindo o relogio que rodará as horas atuais do momento
 
     tempo = datetime.now()
     hora = tempo.strftime("%H:%M:%S")
@@ -38,11 +38,11 @@ def relogio():
     mes = tempo.strftime("%b")
     ano = tempo.strftime("%Y")
 
-    L1.config(text=hora)
+    L1.config(text=hora) # a função atribuida ao obj "hora" substituirá o texto apresentado na label 
     L1.after(200, relogio)
 
 
-    L1.config(text=hora)
+    L1.config(text=hora) # KKKKKKKKKKKKKK ENTENDI PQ TA TRAVANDO
     L1.after(200, relogio)
     L2.config(text=dia_semana + "   " + str(dia) +
               "/" + str(mes) + "/" + (ano))
