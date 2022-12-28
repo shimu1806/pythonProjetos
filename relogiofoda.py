@@ -38,25 +38,22 @@ def relogio(): # definindo o relogio que rodará as horas atuais do momento
     mes = tempo.strftime("%b")
     ano = tempo.strftime("%Y")
 
-    L1.config(text=hora) # a função atribuida ao obj "hora" substituirá o texto apresentado na label 
-    L1.after(200, relogio)
 
-
-    L1.config(text=hora) # KKKKKKKKKKKKKK ENTENDI PQ TA TRAVANDO
-    L1.after(200, relogio)
-    L2.config(text=dia_semana + "   " + str(dia) +
+    L1.config(text=hora) # a função atribuida ao obj "hora" substituirá o texto apresentado na label
+    L1.after(200, relogio) # para manter o tempo dinamico, usamos essa função. como ela funciona? não sei, mas funciona
+    L2.config(text=dia_semana + "   " + str(dia) + # apenas entregando ao relógio as demais funções do __relogio__
               "/" + str(mes) + "/" + (ano))
 
 
 L1 = Label(
     janela,
-           text="10:05:05",
+           text="10:05:05", # tanto faz, só para formatar como 00:00:00, ele logo receberá o hora
            font=('digital-7  80'),
            bg=fundo,
            fg=cor
 )
 
-L1.grid(row=0, column=0, sticky=NW, padx=5)
+L1.grid(row=0, column=0, sticky=NW, padx=5) # pra ficar bem bacana em cima
 
 
 L2 = Label(
@@ -66,8 +63,8 @@ L2 = Label(
            fg=cor
 )
 
-L2.grid(row=1, column=0, sticky=NW, padx=5)
+L2.grid(row=1, column=0, sticky=NW, padx=5) # logo em baixo lindo fofo
 
-
+# executa.py fé
 relogio()
 janela.mainloop()
