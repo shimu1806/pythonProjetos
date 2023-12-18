@@ -63,7 +63,7 @@ L2 = Label(
            fg=cor
 )
 
-L2.grid(row=1, column=0, sticky=NW, padx=5) # logo em baixo lindo fofo
+L2.grid(row=1, column=0, sticky=NW, padx=5)
 
 # executa.py fé
 relogio()
