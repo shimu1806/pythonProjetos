@@ -40,7 +40,7 @@ def relogio(): # definindo o relogio que rodará as horas atuais do momento
 
 
     L1.config(text=hora) # a função atribuida ao obj "hora" substituirá o texto apresentado na label
-    L1.after(200, relogio) # para manter o tempo dinamico, usamos essa função. como ela funciona? não sei, mas funciona
+    L1.after(200, relogio) 
     L2.config(text=dia_semana + "   " + str(dia) + # apenas entregando ao relógio as demais funções do __relogio__
               "/" + str(mes) + "/" + (ano))
 
