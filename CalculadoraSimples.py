@@ -4,7 +4,7 @@ Calculadora simples que realiza operações básicas
 
 """
 
-print("TOP 10 AS MAIS TOPS E EFICIENTES CALCULADORAS OFF THE MUNDO\n\n\n")
+print("Calculadora em .Py\n\n\n")
 
 Numero1 = int(input("Digite o primeiro valor: "))
 operador = (input(
