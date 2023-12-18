@@ -10,16 +10,16 @@ no valor decimal
 
 """
 
-binario = int(input("Digita a porra do numerio binario, verme: ")) 
-n = len(str(binario)) # servirá para reduzir o comprimento do número binario, podendo realizar a operação de todas as posições
-valorDigitado = binario # servirá pra exibir o resultado
-decimal = 0 # como o decimal começa a partir do 0, 0
-i = 0 # a base começa sendo elevada a 0, portanto, a variavel i, que representa o espoente é 0 
+binario = int(input("Digita um numerio binario, verme: ")) 
+n = len(str(binario)) 
+valorDigitado = binario 
+decimal = 0 
+i = 0
 
 while n >= 0: # o ciclo encerra quando o binario for totalmente operado
         resto = binario % 10 
         print("o resto deu: ", resto)
-        decimal = decimal + (resto * (2**i)) # o decimal vai aumentando conforme o programa operta, no caso, ele está recebendo o valor da base 2** ao esponte que cresce conforme o ciclo gira + o resto da divisão do número binário
+        decimal = decimal + (resto * (2**i)) 
         print("o decimal ta indo em: ", decimal)
         n = n - 1 # o comprimento vai reduzindo conforme segue o ciclo
         print("o n ta indo em: ", n)
